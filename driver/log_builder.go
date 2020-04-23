@@ -33,7 +33,8 @@ func logMessage(lp *logPair, message []byte) error {
 		return err
 	}
 
-    lp.logger.Info(string(bytes))
+//     lp.logger.Info(string(bytes))
+    lp.logger.Info(message[:])
 
     return nil;
 }
